@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual environment
+traffic_rl/
+smart_route/
+env/
+venv/
+ENV/
+
+# SUMO outputs
+*.out.xml
+*.log
+*.out
+
+# RL Models and Training outputs
+runs/
+outputs/csv/
+outputs/logs/
+models/*.zip
+
+# YOLO weights
+*.pt
+*.pth
+yolov8*.pt
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.code-workspace
+
+# Large PDF (optional - uncomment if needed)
+# Rupali_kale_Reserch_paper.pdf

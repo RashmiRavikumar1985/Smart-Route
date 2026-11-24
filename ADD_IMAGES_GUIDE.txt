@@ -1,0 +1,34 @@
+========================================
+HOW TO ADD YOUR RESULT IMAGES
+========================================
+
+You have 3 screenshots to add to the project:
+
+STEP 1: Rename Your Images
+---------------------------
+1. Training performance graph (time/fps) → training_performance.png
+2. TensorBoard 6-panel metrics → tensorboard_metrics.png  
+3. SUMO traffic intersection → sumo_simulation.png
+
+STEP 2: Copy to docs/ Folder
+-----------------------------
+Place all 3 images in this folder:
+E:\Traffic_Signal_Optimization_using_Reinforcement_Learning-main\Traffic_Signal_Optimization_using_Reinforcement_Learning-main\docs\
+
+STEP 3: Verify
+--------------
+After copying, you should have:
+- docs/training_performance.png
+- docs/tensorboard_metrics.png
+- docs/sumo_simulation.png
+
+STEP 4: Push to GitHub
+----------------------
+After adding images, run:
+> git add docs/
+> git commit -m "Add training results and simulation screenshots"
+> git push
+
+The README is already updated to show these images!
+
+========================================

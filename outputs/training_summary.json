@@ -1,0 +1,60 @@
+{
+  "project": "Traffic Signal Optimization using YOLOv8 + SUMO-RL + PPO",
+  "simulation": {
+    "simulator": "SUMO 1.28.0",
+    "network": "cross_2lanes (4-way intersection, 2 lanes per direction)",
+    "duration_seconds": 3600,
+    "delta_time": 5,
+    "vehicles": "1200 mixed vehicles"
+  },
+  "training": {
+    "total_timesteps": 50000,
+    "algorithms": [
+      {
+        "algorithm": "PPO",
+        "training_episodes": 71,
+        "training_timesteps": 50000,
+        "training_time_sec": 5766.9,
+        "avg_training_reward": -110.14,
+        "avg_eval_reward": -0.0,
+        "std_eval_reward": 0.0,
+        "best_eval_reward": 0.0,
+        "worst_eval_reward": -0.0
+      },
+      {
+        "algorithm": "DQN",
+        "training_episodes": 69,
+        "training_timesteps": 50000,
+        "training_time_sec": 3629.0,
+        "avg_training_reward": -129.13,
+        "avg_eval_reward": -14.0,
+        "std_eval_reward": 10.2,
+        "best_eval_reward": 0.0,
+        "worst_eval_reward": -30.0
+      },
+      {
+        "algorithm": "A2C",
+        "training_episodes": 69,
+        "training_timesteps": 50000,
+        "training_time_sec": 39819.2,
+        "avg_training_reward": -152.17,
+        "avg_eval_reward": -959.98,
+        "std_eval_reward": 1919.96,
+        "best_eval_reward": 0.0,
+        "worst_eval_reward": -4799.91
+      }
+    ]
+  },
+  "files_generated": [
+    "models/ppo_cross.zip",
+    "models/dqn_cross.zip",
+    "models/a2c_cross.zip",
+    "outputs/csv/training_log_ppo.csv",
+    "outputs/csv/training_log_dqn.csv",
+    "outputs/csv/training_log_a2c.csv",
+    "outputs/csv/evaluation_results.csv",
+    "outputs/csv/algorithm_comparison.csv",
+    "outputs/training_summary.json",
+    "runs/ (TensorBoard logs)"
+  ]
+}
